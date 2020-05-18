@@ -20,7 +20,7 @@
           "archiveFileName": "esp32-1.0.4.zip", 
           "boards": [
             {
-              "name": "ESP32 e-Yantra Module"
+              "name": "ESP32 Dev Module"
             }, 
             {
               "name": "WEMOS LoLin32"
@@ -47,7 +47,7 @@
             }
           ], 
           "size": "42425176"
-        }, 
+        }
       ], 
       "tools": [
         {
@@ -222,88 +222,6 @@
           ]
         }, 
         {
-          "version": "2.5.0", 
-          "name": "esptool", 
-          "systems": [
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.5.0-windows.zip", 
-              "checksum": "SHA-256:576b8068b577cae0e6e937566a9d32a08ff7ff82963fb60400eacb6691f2fbfb", 
-              "host": "i686-mingw32", 
-              "archiveFileName": "esptool-2.5.0-windows.zip", 
-              "size": "3420959"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.5.0-macos.tar.gz", 
-              "checksum": "SHA-256:2da8ba3b83d99b5d808cab955a077e3e0738ec640b51de932d047cad7fac1157", 
-              "host": "x86_64-apple-darwin", 
-              "archiveFileName": "esptool-2.5.0-macos.tar.gz", 
-              "size": "3835397"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.5.0-linux.tar.gz", 
-              "checksum": "SHA-256:34d63b9a0bf2acb9b6fdac15f91a8756f4e722065de031e8fbce4e4abc369e54", 
-              "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "esptool-2.5.0-linux.tar.gz", 
-              "size": "43468"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.5.0-linux.tar.gz", 
-              "checksum": "SHA-256:34d63b9a0bf2acb9b6fdac15f91a8756f4e722065de031e8fbce4e4abc369e54", 
-              "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "esptool-2.5.0-linux.tar.gz", 
-              "size": "43468"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.5.0-linux.tar.gz", 
-              "checksum": "SHA-256:34d63b9a0bf2acb9b6fdac15f91a8756f4e722065de031e8fbce4e4abc369e54", 
-              "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "esptool-2.5.0-linux.tar.gz", 
-              "size": "43468"
-            }
-          ]
-        }, 
-        {
-          "version": "da31d9d2", 
-          "name": "esptool", 
-          "systems": [
-            {
-              "url": "https://dl.espressif.com/dl/esptool-da31d9d2-windows.zip", 
-              "checksum": "SHA-256:5e3b5154b9adaf38aeb580222b434bf6e9381a8b989e227f3ad6b2cecc56a57b", 
-              "host": "i686-mingw32", 
-              "archiveFileName": "esptool-da31d9d2-windows.zip", 
-              "size": "3396085"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-da31d9d2-macos.tar.gz", 
-              "checksum": "SHA-256:00f2c16e3b44064596e883fcb20392c9e52ebf74484672170fbeb4c6641e37cc", 
-              "host": "x86_64-apple-darwin", 
-              "archiveFileName": "esptool-da31d9d2-macos.tar.gz", 
-              "size": "3810936"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-da31d9d2-linux.tar.gz", 
-              "checksum": "SHA-256:a8a23028bde25b25fae39554b4e6138592ef18e099bfeb239b4a003a2ae3f55c", 
-              "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "esptool-da31d9d2-linux.tar.gz", 
-              "size": "39563"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-da31d9d2-linux.tar.gz", 
-              "checksum": "SHA-256:a8a23028bde25b25fae39554b4e6138592ef18e099bfeb239b4a003a2ae3f55c", 
-              "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "esptool-da31d9d2-linux.tar.gz", 
-              "size": "39563"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-da31d9d2-linux.tar.gz", 
-              "checksum": "SHA-256:a8a23028bde25b25fae39554b4e6138592ef18e099bfeb239b4a003a2ae3f55c", 
-              "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "esptool-da31d9d2-linux.tar.gz", 
-              "size": "39563"
-            }
-          ]
-        }, 
-        {
           "version": "1.22.0-80-g6c4433a-5.2.0", 
           "name": "xtensa-esp32-elf-gcc", 
           "systems": [
@@ -346,7 +264,7 @@
         }
       ], 
       "email": "hristo@espressif.com", 
-      "name": "esp32"
+      "name": "my_new_board"
     }
   ]
 }
