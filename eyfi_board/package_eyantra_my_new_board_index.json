@@ -10,7 +10,7 @@
         {
           "category": "ESP32", 
           "name": "esp32", 
-          "url": "https://github.com/espressif/arduino-esp32/releases/download/1.0.4/esp32-1.0.4.zip", 
+          "url": "https://github.com/Soofiyan29/arduino_custom/blob/master/eyfi_board/my_new_board.zip", 
           "checksum": "SHA-256:d9531a9e0ba8adadc2f59442e9d580aed17ae9bccd2e2df774164c5e31cde123", 
           "help": {
             "online": ""
