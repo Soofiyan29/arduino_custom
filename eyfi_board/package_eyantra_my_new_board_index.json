@@ -11,7 +11,7 @@
           "category": "ESP32", 
           "name": "esp32", 
           "url": "https://github.com/Soofiyan29/arduino_custom/blob/master/eyfi_board/my_new_board.zip", 
-          "checksum": "SHA-256:d9531a9e0ba8adadc2f59442e9d580aed17ae9bccd2e2df774164c5e31cde123", 
+          "checksum": "SHA-256:f36e92cb0c4fea99593789d4a1feff81ebf19e31e9d42e34857291db3cdfbe12", 
           "help": {
             "online": ""
           }, 
@@ -46,7 +46,7 @@
               "name": "mkspiffs"
             }
           ], 
-          "size": "42425176"
+          "size": "42408973"
         }
       ], 
       "tools": [
