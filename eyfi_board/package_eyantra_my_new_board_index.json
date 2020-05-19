@@ -11,7 +11,7 @@
           "category": "Contributed", 
           "name": "eYFi-Mega ESP32 board", 
           "url": "https://github.com/Soofiyan29/arduino_custom/blob/master/eyfi_board/my_new_board.zip?raw=true", 
-          "checksum": "SHA-256:f36e92cb0c4fea99593789d4a1feff81ebf19e31e9d42e34857291db3cdfbe12", 
+          "checksum": "SHA-256:1d2c5e15e653165483c9eb623e722ed626484b345a1e034e40a18249eb119a74", 
           "help": {
             "online": ""
           }, 
@@ -40,7 +40,7 @@
               "name": "mkspiffs"
             }
           ], 
-          "size": "42408973"
+          "size": "43277070"
         }
       ], 
       "tools": [
