@@ -13,7 +13,7 @@ menu.Revision=Board Revision
 ### DO NOT PUT BOARDS ABOVE THE OFFICIAL ESPRESSIF BOARDS! ###
 ##############################################################
 
-eyfi_esp.name=eYFi-Mega esp32 Module
+eyfi_esp.name=eYFi-Mega ESP32
 
 eyfi_esp.upload.tool=esptool_py
 eyfi_esp.upload.maximum_size=1310720
