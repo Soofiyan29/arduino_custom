@@ -15,7 +15,7 @@
           "help": {
             "online": ""
           }, 
-          "version": "1.0.4", 
+          "version": "1.0", 
           "architecture": "esp32", 
           "archiveFileName": "eYFi-Mega-ESP32.zip", 
           "boards": [
