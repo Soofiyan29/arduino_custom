@@ -24,6 +24,9 @@
 #include "soc/gpio_struct.h"
 #include "soc/rtc_io_reg.h"
 
+uint8_t pins_eyfi[] = {13, 5, 21, 23, 12, 26, 35, 39, 16, 17, 19, 22, 14, 25, 34, 36};
+uint8_t size_eyfi_pins = 16;
+
 const int8_t esp32_adc2gpio[20] = {36, 37, 38, 39, 32, 33, 34, 35, -1, -1, 4, 0, 2, 15, 13, 12, 14, 27, 25, 26};
 
 const DRAM_ATTR esp32_gpioMux_t esp32_gpioMux[GPIO_PIN_COUNT]={
@@ -85,6 +88,14 @@ extern void IRAM_ATTR __pinMode(uint8_t pin, uint8_t mode)
 
     if(!digitalPinIsValid(pin)) {
         return;
+    }
+    
+    for(int eyfi_i = 0; eyfi_i < size_eyfi_pins; eyfi_i ++)
+    {
+        if((pin) != pins_eyfi[eyfi_i])
+        {
+            return;
+        }
     }
 
     uint32_t rtc_reg = rtc_gpio_desc[pin].reg;

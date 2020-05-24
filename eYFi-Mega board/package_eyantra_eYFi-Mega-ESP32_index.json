@@ -11,7 +11,7 @@
           "category": "Contributed by e-Yantra", 
           "name": "eYFi-Mega (ESP32)", 
           "url": "https://github.com/Soofiyan29/e-Yantra-ESP32/blob/master/eYFi-Mega%20board/eYFi-Mega-ESP32.zip?raw=true", 
-          "checksum": "SHA-256:0ab41ca599b8d968c9b3da69913d685e0416d2b43c059bbc964ec15b3adf4d05", 
+          "checksum": "SHA-256:e6ab9a7cf779d4ebaacf2764079709f6e70d75245797c5f3354d1fd066acec91", 
           "help": {
             "online": ""
           }, 
@@ -40,7 +40,7 @@
               "name": "mkspiffs"
             }
           ], 
-          "size": "43278516"
+          "size": "43207538"
         }
       ], 
       "tools": [
