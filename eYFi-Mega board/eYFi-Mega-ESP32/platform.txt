@@ -1,12 +1,17 @@
 name=eYFi-Mega ESP32
-version=1.0
+version=
 
-##############################################################################
+
 
 tools.esptool_py.path={runtime.tools.esptool_py.path}
 tools.esptool_py.cmd=esptool
 tools.esptool_py.cmd.linux=esptool.py
 tools.esptool_py.cmd.windows=esptool.exe
+
+# @eyfi-mega
+tools.esptool_py.cmdey=eyfi-flasher
+tools.esptool_py.cmdey.linux=eyfi-flasher
+tools.esptool_py.cmdey.windows=eyfi-flasher.exe
 
 tools.esptool_py.network_cmd=python "{runtime.platform.path}/tools/espota.py"
 tools.esptool_py.network_cmd.windows="{runtime.platform.path}/tools/espota.exe"
@@ -97,6 +102,9 @@ recipe.size.regex.data=^(?:\.dram0\.data|\.dram0\.bss|\.noinit)\s+([0-9]+).*
 tools.esptool_py.upload.protocol=esp32
 tools.esptool_py.upload.params.verbose=
 tools.esptool_py.upload.params.quiet=
-tools.esptool_py.upload.pattern="{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed} write_flash 0x1000 "{runtime.platform.path}/tools/eyfi-mega/eyfi-mega_esp32_bootloader.bin" 0x8000 "{runtime.platform.path}/tools/eyfi-mega/eyfi-mega_esp32_partitions.bin" 0x10000 "{runtime.platform.path}/tools/eyfi-mega/eyfi-mega_esp32_ota_app.bin" 0x110000 "{build.path}/{build.project_name}.bin"
+
+tools.esptool_py.upload.pattern="{path}/{cmdey} " "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe=\\portable\\packages\\esp32\\tools\\esptool_py\\2.6.1 -bin={build.path}/{build.project_name}.bin
+
 tools.esptool_py.upload.pattern.linux=python "{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed}  --before default_reset --after hard_reset write_flash -z --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size detect 0xe000 "{runtime.platform.path}/tools/partitions/boot_app0.bin" 0x1000 "{runtime.platform.path}/tools/sdk/bin/bootloader_{build.boot}_{build.flash_freq}.bin" 0x10000 "{build.path}/{build.project_name}.bin" 0x8000 "{build.path}/{build.project_name}.partitions.bin"
+
 tools.esptool_py.upload.network_pattern={network_cmd} -i "{serial.port}" -p "{network.port}" "--auth={network.password}" -f "{build.path}/{build.project_name}.bin"

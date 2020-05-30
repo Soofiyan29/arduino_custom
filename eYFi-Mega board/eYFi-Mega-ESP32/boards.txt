@@ -9,6 +9,8 @@ menu.DebugLevel=Core Debug Level
 menu.PSRAM=PSRAM
 menu.Revision=Board Revision
 
+menu.eYFi-OTA-ESP32=eYFi-OTA-ESP32
+
 ##############################################################
 ### DO NOT PUT BOARDS ABOVE THE OFFICIAL ESPRESSIF BOARDS! ###
 ##############################################################
@@ -35,6 +37,21 @@ eyfi_esp.build.flash_mode=dio
 eyfi_esp.build.boot=dio
 eyfi_esp.build.partitions=default
 eyfi_esp.build.defines=
+
+
+
+eyfi_esp.menu.eYFi-OTA-ESP32.disabled=Disabled
+eyfi_esp.menu.eYFi-OTA-ESP32.disabled.builde32.defines=-mode=wired
+
+eyfi_esp.menu.eYFi-OTA-ESP32.wupload=Upload
+eyfi_esp.menu.eYFi-OTA-ESP32.wupload.builde32.defines=-mode=wireless-u
+
+eyfi_esp.menu.eYFi-OTA-ESP32.wuploadflash=Upload & Flash
+eyfi_esp.menu.eYFi-OTA-ESP32.wuploadflash.builde32.defines=-mode=wireless-uf
+
+
+
+
 
 eyfi_esp.menu.PSRAM.disabled=Disabled
 eyfi_esp.menu.PSRAM.disabled.build.defines=

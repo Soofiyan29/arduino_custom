@@ -11,7 +11,7 @@
           "category": "Contributed by e-Yantra", 
           "name": "eYFi-Mega (ESP32)", 
           "url": "https://github.com/Soofiyan29/e-Yantra-ESP32/blob/master/eYFi-Mega%20board/eYFi-Mega-ESP32.zip?raw=true", 
-          "checksum": "SHA-256:e6ab9a7cf779d4ebaacf2764079709f6e70d75245797c5f3354d1fd066acec91", 
+          "checksum": "SHA-256:bfdde26cebd386c6b2b5f4f8ce915a893831ea5e0bc9a1e4529a0c1926a39a3c", 
           "help": {
             "online": ""
           }, 
@@ -40,7 +40,7 @@
               "name": "mkspiffs"
             }
           ], 
-          "size": "43207538"
+          "size": "43207821"
         }
       ], 
       "tools": [
@@ -49,39 +49,11 @@
           "name": "esptool_py", 
           "systems": [
             {
-              "url": "https://dl.espressif.com/dl/esptool-2.6.1-windows.zip", 
-              "checksum": "SHA-256:84cf0b369a7707fe566434faba148852fc464992111d5baa95b658b374802f96", 
+              "url": "https://github.com/Soofiyan29/e-Yantra-ESP32/blob/master/esptool_py.zip?raw=true", 
+              "checksum": "SHA-256:8d984d9324c0c6cf57b72af47cab1748d91508ebcf3b36dd598877866bb08016", 
               "host": "i686-mingw32", 
-              "archiveFileName": "esptool-2.6.1-windows.zip", 
-              "size": "3422445"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.6.1-macos.tar.gz", 
-              "checksum": "SHA-256:f4eb758a301d6902cc9dfcd49d36345d2f075ad123da7cf8132d15cfb7533457", 
-              "host": "x86_64-apple-darwin", 
-              "archiveFileName": "esptool-2.6.1-macos.tar.gz", 
-              "size": "3837085"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.6.1-linux.tar.gz", 
-              "checksum": "SHA-256:eaf82ff4070d9792f6a42ae1e485375de5a87bec59ef01dfb95de901519ec7fb", 
-              "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "esptool-2.6.1-linux.tar.gz", 
-              "size": "44762"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.6.1-linux.tar.gz", 
-              "checksum": "SHA-256:eaf82ff4070d9792f6a42ae1e485375de5a87bec59ef01dfb95de901519ec7fb", 
-              "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "esptool-2.6.1-linux.tar.gz", 
-              "size": "44762"
-            }, 
-            {
-              "url": "https://dl.espressif.com/dl/esptool-2.6.1-linux.tar.gz", 
-              "checksum": "SHA-256:eaf82ff4070d9792f6a42ae1e485375de5a87bec59ef01dfb95de901519ec7fb", 
-              "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "esptool-2.6.1-linux.tar.gz", 
-              "size": "44762"
+              "archiveFileName": "esptool_py.zip", 
+              "size": "7514991"
             }
           ]
         }, 
