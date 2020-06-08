@@ -1,4 +1,4 @@
-name=eYFi-Mega ESP32
+name=eYFi-Mega ESP32 Section
 version=1.0.0
 
 
