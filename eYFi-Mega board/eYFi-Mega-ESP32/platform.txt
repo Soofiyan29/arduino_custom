@@ -8,10 +8,12 @@ tools.esptool_py.cmd=esptool
 tools.esptool_py.cmd.linux=esptool.py
 tools.esptool_py.cmd.windows=esptool.exe
 
+# --------------------------------------------------------------------------
 # @eyfi-mega
 tools.esptool_py.cmdey=eyfi-flasher
 tools.esptool_py.cmdey.linux=eyfi-flasher
 tools.esptool_py.cmdey.windows=eyfi-flasher.exe
+# --------------------------------------------------------------------------
 
 tools.esptool_py.network_cmd=python "{runtime.platform.path}/tools/espota.py"
 tools.esptool_py.network_cmd.windows="{runtime.platform.path}/tools/espota.exe"
@@ -103,8 +105,18 @@ tools.esptool_py.upload.protocol=esp32
 tools.esptool_py.upload.params.verbose=
 tools.esptool_py.upload.params.quiet=
 
-tools.esptool_py.upload.pattern="{path}/{cmdey} " "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe=\\AppData\\Local\\Arduino15\\packages\\eYFi-Mega-ESP32-board\\tools\\esptool_py\\2.6.1 -bin={build.path}/{build.project_name}.bin
 
-tools.esptool_py.upload.pattern.linux=python "{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed}  --before default_reset --after hard_reset write_flash -z --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size detect 0xe000 "{runtime.platform.path}/tools/partitions/boot_app0.bin" 0x1000 "{runtime.platform.path}/tools/sdk/bin/bootloader_{build.boot}_{build.flash_freq}.bin" 0x10000 "{build.path}/{build.project_name}.bin" 0x8000 "{build.path}/{build.project_name}.partitions.bin"
+
+# --------------------------------------------------------------------------
+# eYFi-Mega (ESP32) Upload Button
+
+tools.esptool_py.upload.pattern.windows="{runtime.platform.path}\tools\eyfi-mega\windows/{cmdey} " "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\windows -bin={build.path}/{build.project_name}.bin
+
+tools.esptool_py.upload.pattern.linux="{runtime.platform.path}/tools/eyfi-mega/linux/{cmdey}" "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\linux -bin={build.path}/{build.project_name}.bin
+
+tools.esptool_py.upload.pattern.macosx="{runtime.platform.path}/tools/eyfi-mega/macosx/{cmdey}" "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\macosx -bin={build.path}/{build.project_name}.bin
+# --------------------------------------------------------------------------
+
+
 
 tools.esptool_py.upload.network_pattern={network_cmd} -i "{serial.port}" -p "{network.port}" "--auth={network.password}" -f "{build.path}/{build.project_name}.bin"
